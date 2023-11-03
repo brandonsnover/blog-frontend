@@ -1,0 +1,22 @@
+#posts-index img {
+  width: 300px;
+}
+
+html {
+  scroll-behavior: smooth;
+  text-align: center;
+}
+
+
+input[type=text] {
+  padding: 10px;
+  color: red;
+}
+
+footer {
+  color: blue;
+}
+
+#posts-index img {
+  width: 150px;
+}

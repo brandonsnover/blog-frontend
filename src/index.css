@@ -2,15 +2,26 @@
   width: 300px;
 }
 
-html {
-  scroll-behavior: smooth;
+body {
   text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/005/178/915/small/abstract-white-and-light-gray-wave-modern-soft-luxury-texture-with-smooth-and-clean-subtle-background-illustration-eps-10-free-vector.jpg");
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 input[type=text] {
-  padding: 10px;
-  color: red;
+  padding:10px;
+  border:0;
+  box-shadow:0 0 10px 4px rgba(11, 4, 129, 0.774);
+  width: 30%;
+  resize: vertical;
+  padding:15px;
+  border-radius:10px;
+  border:0;
+  margin-bottom: 5px;
 }
 
 footer {
@@ -19,4 +30,50 @@ footer {
 
 #posts-index img {
   width: 150px;
+}
+
+header {
+  background-color: darkblue;
+  color: lightblue;
+  padding: 25px;
+  font-size: larger;
+}
+
+header a {
+  color: lightblue;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+button {
+  padding: 10px;
+  border: 5;
+  background-color: darkblue;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  width: 300px;
+}
+
+button:hover {
+  color: white;
+  background-color: darkgray;
+}
+
+.inputfields {
+  color: rgb(0, 0, 54);
+  font-size: larger;
+}
+
+textarea {
+  width:30%;
+  resize: vertical;
+  padding:15px;
+  border-radius:15px;
+  border:0;
+  box-shadow:0 0 10px 4px rgba(11, 4, 129, 0.774);
+  height:100px;
 }

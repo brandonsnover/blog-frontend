@@ -12,11 +12,14 @@ export function PostsIndex(props) {
             <p>{post.body}</p>
             <img src={post.image} alt="image" />
             <div>
-              <button>More Info</button>
+              <button onClick={props.onShowPost}>More Info</button>
             </div>
           </div>
         ))}
       </div>
+      <p>
+        <button onClick={props.onShowPost}>Another Button</button>
+      </p>
     </div>
   );
 }

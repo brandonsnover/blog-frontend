@@ -1,5 +1,6 @@
 import { PostsIndex } from "./PostsIndex";
 import { PostsNew } from "./PostsNew";
+import { Modal } from "./Modal";
 
 export function Content() {
   let posts = [
@@ -47,6 +48,9 @@ export function Content() {
     <div>
       <PostsNew />
       <PostsIndex posts={posts} />
+      <Modal show={true}>
+        <p>test</p>
+      </Modal>
     </div>
   );
 }

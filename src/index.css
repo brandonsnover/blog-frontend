@@ -2,11 +2,6 @@
   width: 300px;
 }
 
-body {
-  text-align: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/005/178/915/small/abstract-white-and-light-gray-wave-modern-soft-luxury-texture-with-smooth-and-clean-subtle-background-illustration-eps-10-free-vector.jpg");
-}
 
 html {
   scroll-behavior: smooth;
@@ -80,9 +75,14 @@ textarea {
 } */ 
 
 /* .card {
- display: grid;
- grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 } */
 
+body {
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/005/178/915/small/abstract-white-and-light-gray-wave-modern-soft-luxury-texture-with-smooth-and-clean-subtle-background-illustration-eps-10-free-vector.jpg");
+}
 
 

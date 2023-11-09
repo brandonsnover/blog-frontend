@@ -7,13 +7,19 @@ export function PostsIndex(props) {
       <div className="row row-cols-3" style={{ width: "60rem" }}>
         {props.posts.map((post) => (
           <div key={post.id} className="col">
-            <div className="card">
+            <div className="card justify-content-center" style={{ height: "55rem" }}>
               <img src={post.image} className="card-img-top" alt="..." />
               <h5 className="card-title">{post.title}</h5>
               <p className="card-text">{post.body}</p>
-              <a className="btn btn-primary" onClick={() => props.onShowPost(post)}>
+              <button
+                type="button"
+                className="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                onClick={() => props.onShowPost(post)}
+              >
                 More info
-              </a>
+              </button>
             </div>
           </div>
         ))}

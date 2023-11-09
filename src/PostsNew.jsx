@@ -32,7 +32,9 @@ export function PostsNew() {
           <input name="image" className="form-control" id="floatingPassword" />
           <label htmlFor="floatingInput">Image</label>
         </div>
-        <button type="submit">Add new post</button>
+        <button type="submit" className="btn btn-primary">
+          Add new post
+        </button>
       </form>
     </div>
   );

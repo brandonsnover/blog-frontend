@@ -7,7 +7,7 @@ export function PostsIndex(props) {
       <div className="row row-cols-3" style={{ width: "60rem" }}>
         {props.posts.map((post) => (
           <div key={post.id} className="col">
-            <div className="card justify-content-center" style={{ height: "55rem" }}>
+            <div className="card justify-content-center">
               <img src={post.image} className="card-img-top" alt="..." />
               <h5 className="card-title">{post.title}</h5>
               <p className="card-text">{post.body}</p>

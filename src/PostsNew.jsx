@@ -9,7 +9,7 @@ export function PostsNew(props) {
 
   return (
     <div id="posts-new">
-      <h1>New Post</h1>
+      <h1>Create New Post</h1>
       <form onSubmit={handleSubmit}>
         <div className="form-floating mb-3">
           <input name="title" type="text" className="form-control" id="floatingInput" />

@@ -28,13 +28,19 @@ export function Content() {
     setIsPostsShowVisible(false);
   };
 
+  const handleCreatePost = (params) => {
+    axios.post("http://localhost:3000/posts.json", params).then((response) => {
+      setPosts([...posts, response.data]);
+    });
+  };
+
   console.log("currentPost =", currentPost);
 
   useEffect(handleIndexPosts, []);
 
   return (
     <div className="container">
-      <PostsNew />
+      <PostsNew onCreatePost={handleCreatePost} />
       <PostsIndex posts={posts} onShowPost={handleShowPost} />
       <Modal show={isPostsShowVisible} onClose={handleClose}>
         <PostsShow post={currentPost} />

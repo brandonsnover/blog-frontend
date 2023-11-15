@@ -4,9 +4,11 @@ import { PostsIndex } from "./PostsIndex";
 import { PostsNew } from "./PostsNew";
 import { PostsShow } from "./PostsShow";
 import { Modal } from "./Modal";
+import { UsersNew } from "./UsersNew";
 
 export function Content() {
   const [posts, setPosts] = useState([]);
+  const [users, setUsers] = useState([]);
 
   const [currentPost, setCurrentPost] = useState({});
 
@@ -58,12 +60,19 @@ export function Content() {
     });
   };
 
+  const handleCreateUser = (params) => {
+    axios.post("http://localhost:3000/users.json", params).then((response) => {
+      setUsers([...users, response.data]);
+    });
+  };
+
   console.log("currentPost =", currentPost);
 
   useEffect(handleIndexPosts, []);
 
   return (
     <div className="container">
+      <UsersNew onCreateUser={handleCreateUser} />
       <PostsNew onCreatePost={handleCreatePost} />
       <PostsIndex posts={posts} onShowPost={handleShowPost} />
       <Modal show={isPostsShowVisible} onClose={handleClose}>

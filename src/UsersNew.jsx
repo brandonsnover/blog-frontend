@@ -16,15 +16,15 @@ export function UsersNew(props) {
           <label htmlFor="floatingInput">Name</label>
         </div>
         <div className="form-floating mb-3">
-          <input name="email" className="form-control" id="floatingPassword" />
+          <input name="email" type="email" className="form-control" id="floatingPassword" />
           <label htmlFor="floatingInput">Email</label>
         </div>
         <div className="form-floating mb-3">
-          <input name="password" className="form-control" id="floatingPassword" />
+          <input name="password" type="password" className="form-control" id="floatingPassword" />
           <label htmlFor="floatingInput">Password</label>
         </div>
         <div className="form-floating mb-3">
-          <input name="password_confirmation" className="form-control" id="floatingPassword" />
+          <input name="password_confirmation" type="password" className="form-control" id="floatingPassword" />
           <label htmlFor="floatingInput">Confirm Password</label>
         </div>
         <button type="submit" className="btn btn-primary">

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export function PostsIndex(props) {
   console.log(props);
 
@@ -20,6 +21,7 @@ export function PostsIndex(props) {
               >
                 More info
               </button>
+              <Link to={`/posts/${post.id}`}>Go to Page</Link>
             </div>
           </div>
         ))}

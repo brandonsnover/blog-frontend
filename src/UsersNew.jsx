@@ -8,7 +8,7 @@ export function UsersNew(props) {
   };
 
   return (
-    <div id="posts-new">
+    <div id="users-new">
       <h1>Create New User</h1>
       <form onSubmit={handleSubmit}>
         <div className="form-floating mb-3">

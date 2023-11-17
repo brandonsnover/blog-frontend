@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export function PostsShow(props) {
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -31,6 +32,7 @@ export function PostsShow(props) {
       <button data-bs-dismiss="modal" onClick={handleClick}>
         Delete Post
       </button>
+      <Link to={`/posts/${props.post.id}`}>Go to Page</Link>
     </div>
   );
 }
